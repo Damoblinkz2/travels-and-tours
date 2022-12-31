@@ -5,6 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>travels & tours</title>
+
+    <!-- ######CSS################## -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--==Using-Font-Awesome-for-Icons========================-->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- FAV ICON -->
+
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon" />
   </head>
-  <body></body>
+  <body>
+    <!--==Navigation=============================-->
+    <nav class="navigation">
+      <!--logo-->
+      <a href="index.html" class="logo"
+        ><i class="fab fa-phoenix-framework"></i>T&T Travels</a
+      >
+
+      <!--menu-btn-->
+      <!-- <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label> -->
+
+      <!--menu-->
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+
+      <!--book-now-btn-->
+      <a href="#" class="book-now-btn">Book Now</a>
+    </nav>
+    <!--nav-end-->
+
+    <!-- ==============MAIN================== -->
+
+    <!--==main==============================-->
+    <section id="main">
+      <div class="main-content">
+        <!--text-->
+        <div class="main-text">
+          <strong
+            >Explore The World <i class="fas fa-globe-americas"></i
+          ></strong>
+          <h1>It's a Big World Out There, Go Explore</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            ab nesciunt possimus blanditiis amet!
+          </p>
+          <a href="#">Book Online</a>
+        </div>
+        <!--img-->
+        <div class="main-img">
+          <img alt="Traveling" src="images/main.png" />
+        </div>
+      </div>
+
+      <!--==Search-Tour=====================-->
+      <div class="search-tour">
+        <form>
+          <!--Location-->
+          <div class="t-search-box">
+            <div class="s-b-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="s-b-input">
+              <span>Location <i class="fas fa-chevron-down"></i></span>
+              <input
+                type="text"
+                name="location"
+                placeholder="New York, USA"
+                required
+              />
+            </div>
+          </div>
+          <!--Date-->
+          <div class="t-search-box">
+            <div class="s-b-icon">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="s-b-input">
+              <span>Tour Date <i class="fas fa-chevron-down"></i></span>
+              <input type="date" id="tourdate" name="tourdate" required />
+            </div>
+          </div>
+          <!--Guest-->
+          <div class="t-search-box">
+            <div class="s-b-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="s-b-input">
+              <span>Persons <i class="fas fa-chevron-down"></i></span>
+              <input
+                type="number"
+                name="total-tourist"
+                placeholder="5 Tourist"
+                required
+              />
+            </div>
+          </div>
+          <!--Btn-->
+          <div class="t-search-btn">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAIN ENDS -->
+
+    <!-- =========TRENDING========== -->
+    <section id="trending">
+      <!-- ****heading*************** -->
+
+      <div class="trending-heading">
+        <h2>Trending 2022</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam illum
+        </p>
+      </div>
+
+      <!-- =====Box Container -->
+      <div class="trending-box-container">
+        <!-- Swiper -->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- --slide 1--- -->
+            <div class="swiper-slide">
+              <!-- box -->
+              <div class="trending-box">
+                <!-- img -->
+                <div class="t-b-img">
+                  <img src="images/t-1.jpg" alt="" />
+                </div>
+
+                <!-- text -->
+
+                <div class="t-b-text">
+                  <a href="#">Forest Wild Life</a>
+                  <span>12 Places | 3 activities</span>
+                </div>
+
+                <!-- price & book -->
+
+                <div class="price-book">
+                  <span class="t-price">$200</span>
+                  <a href="#" class="t-book">Book Now</a>
+                </div>
+
+                <!-- agency -->
+
+                <div class="agency-name">
+                  <img src="images/Agency_Name.png" alt="agency-logo" />
+                  <span>Agency Name</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- <script type="text/javascript">
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script> -->
+  </body>
 </html>
